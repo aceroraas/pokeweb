@@ -33,17 +33,17 @@ function crearPokemones(data) {
 
     let nombre = document.createElement("h3");
     let img = document.createElement("img");
-    button.appendChild(nombre);
     nombre.innerText = data[i].name;
     getImgPokemon(data[i].url).then((pokemon) => {
       img.src = pokemon.sprites.front_default;
-
+      
       button.addEventListener("click", (e) => {
         let imagenPrincipal = document.getElementById('imgPokemon');
         imagenPrincipal.src=pokemon.sprites.front_default;
       });
-
+      
       button.appendChild(img);
+      button.appendChild(nombre);
     });
     base.appendChild(button);
   }
