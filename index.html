@@ -4,18 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manuel Watson</title>
+    <title>Cazando Pokemons</title>
     <style>
         .title{
             display: block;
-            margin-top: calc(10% - 37px) ;
+            margin-top: calc(5% - 37px) ;
         }
         .container{
-            width: 100vw;
+            width: 100%;
             padding: 0;
             margin: 0;
         }
-        
+        #imgPokemon{
+            width: 30%;
+        }
+
+        #pokemons{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 20px; 
+            margin-left: 40px;
+            width: 100%;     
+        }
+        #pokemons h3{
+            margin-top: -20%;
+        }
+        body{ 
+            background: linear-gradient( #39FAC2,#2DE1F5);  
+            height: 100vh;     
+            width: 90vw;
+            }
+        #pokemons div{
+            background-color: #F9E2EF;
+            padding: 1px 3px;
+            margin-left: 0px;
+            margin-right: 20px;
+            border-radius: 30px;
+            transition: 400ms ease-in-out;
+
+        }
+        #pokemons div:hover{
+            cursor: pointer;
+            background-color:transparent;
+            padding: 1px 3px;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -23,7 +59,7 @@
     <br>
     <h1 class="title" id="pokemon"></h1>
     <div class="container">
-        <img id='imgPokemon' src="./asset/imgs/descarga.jpg" alt='pokemon'/>
+        <img id='imgPokemon' src="./asset/imgs/descarga_1.png" alt='pokemon'/>
     </div>
     <section>
 
