@@ -1,7 +1,7 @@
 let pokemons = [];
 
 function getPokemons() {
-  fetch("https://pokeapi.co/api/v2/pokemon?limit=10&offset=20")
+  fetch("https://pokeapi.co/api/v2/pokemon?limit=05&offset=10")
     .then((respuesta) => respuesta.json())
 
     .then((datos) => {
