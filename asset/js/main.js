@@ -31,7 +31,7 @@ function crearPokemones(data) {
   for (let i = 0; i < data.length; i++) {
     let button = document.createElement("div");
 
-    let nombre = document.createElement("h3");
+    let nombre = document.createElement("h4");
     let img = document.createElement("img");
     nombre.innerText = data[i].name;
     getImgPokemon(data[i].url).then((pokemon) => {
